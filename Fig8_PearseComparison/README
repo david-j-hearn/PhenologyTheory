@@ -1,0 +1,10 @@
+The goal is the explore the inference of extremes using Pearse and the proposed method. Populations of three sizes were simulated and were sampled at various sample sizes. 
+To make the plot, run the following in an R terminal:
+
+pdf("Fig8_PearseComparison.pdf")
+source("makeFig8.PearseComparison.R")
+dev.off()
+
+The data used to generate the figure are in the "results.txt" file. These data are summaries of multiple simulation replicates.
+
+If you wish to regenerate these simulation data, follow the README file in the Simulation subdirectory.

@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Menu class="javax.swing.JMenuBar" name="Menu_MainMenu">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="Menu_File">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="File"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_OpenCharactersFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Select Character File..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="menuKeyPressed" listener="javax.swing.event.MenuKeyListener" parameters="javax.swing.event.MenuKeyEvent" handler="MenuItem_OpenCharactersFileMenuKeyPressed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_OpenCharactersFileActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_OpenImagesDirectory">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Select Images Directory..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_OpenImagesDirectoryActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_OpenAddedAttributeFile">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Select Added Attribute File..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_OpenAddedAttributeFileActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_Exit">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Exit"/>
+              </Properties>
+              <Events>
+                <EventHandler event="menuKeyReleased" listener="javax.swing.event.MenuKeyListener" parameters="javax.swing.event.MenuKeyEvent" handler="MenuItem_ExitMenuKeyReleased"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_ExitActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Menu_Parameters">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Parameters"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_SamplingParameters">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Set Sampling Parameters..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_SamplingParametersActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_ColorPalette">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Set Color Palette..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_ColorPaletteActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_ImageInformation">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="View Image Information..."/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_ImageInformationActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Menu_Sampling">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sampling"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="CheckBoxMenuItem_Autosave">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Autosave"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="CheckBoxMenuItem_AutosaveItemStateChanged"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="CheckBoxMenuItem_RandomizeSampling">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Randomize Sampling"/>
+                <Property name="enabled" type="boolean" value="false"/>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="CheckBoxMenuItem_RandomizeSamplingItemStateChanged"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CheckBoxMenuItem_RandomizeSamplingActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_Delete">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Delete Samples..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_DeleteActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="CheckBoxMenuItem_FastMode">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Fast Mode"/>
+              </Properties>
+              <Events>
+                <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="CheckBoxMenuItem_FastModeItemStateChanged"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Menu_Log">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Log"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="MenuItem_Notes">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Edit Notes..."/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItem_NotesActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="Menu_Help">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Help"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Help..."/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="Menu_MainMenu"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="Button_PreviousImageFile" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Button_NextImageFile" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Button_RandomImage" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="ComboBox_ImageFiles" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Label_MainImage" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="TextField_ImageNumber" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="Panel_MainImage" alignment="1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="Label_ClickMainImage" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Slider_Zoom" min="-2" pref="115" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="TextField_ZoomFactor" min="-2" pref="50" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="TextField_LocalSize" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="Label_LocalSize" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="Label_WindowSize" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="Label_OverviewSize" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="TextField_WindowSize" min="-2" pref="49" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="TextField_OverviewSize" min="-2" pref="49" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="Panel_ZoomImage" alignment="0" max="32767" attributes="0"/>
+                          <Component id="Panel_SampledImage" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="Label_ClickZoomedImage" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Panel_CharacterCheckList" alignment="1" pref="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Label_AddedAttribute" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ComboBox_AddedAttributeList" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="CheckBox_MutuallyExclusive" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Label_SampleNumber" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="Button_RandomPixel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="CheckBox_ResetOnSave" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="Button_ResetCharacters" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="Button_SaveSample" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Label_LocalSize" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Label_AddedAttribute" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ComboBox_AddedAttributeList" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Button_PreviousImageFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Button_NextImageFile" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Button_RandomImage" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Label_WindowSize" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Label_OverviewSize" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="ComboBox_ImageFiles" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TextField_LocalSize" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="TextField_OverviewSize" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Button_RandomPixel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TextField_WindowSize" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Label_SampleNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="Label_ClickMainImage" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Label_MainImage" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Slider_Zoom" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TextField_ZoomFactor" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="TextField_ImageNumber" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="CheckBox_ResetOnSave" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Button_ResetCharacters" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Button_SaveSample" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="Panel_ZoomImage" max="32767" attributes="0"/>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+                      <Component id="Label_ClickZoomedImage" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="Panel_SampledImage" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="Panel_MainImage" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="Panel_CharacterCheckList" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="CheckBox_MutuallyExclusive" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JScrollPane" name="Panel_CharacterCheckList">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTable" name="Table_CharacterChecklist">
+          <Properties>
+            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.table.DefaultTableModel(&#xa;    table,&#xa;    title&#xa;) &#xa;/*{ &#xa;public void setValueAt(Object value, int row, int col) {&#xa;&#xa;    System.out.println(&quot;Hello from setValueAt&quot;);&#xa;    super.setValueAt(value, row, col);&#xa;&#xa;    if(CheckBox_MutuallyExclusive.isSelected()) {&#xa;&#xa;    System.out.println(&quot;Mutually exclusive at row &quot; + row);&#xa;&#xa;    int numChar = Table_CharacterChecklist.getModel().getRowCount();&#xa;        for (int i = 0; i &lt;= numChar - 1; i++) {&#xa;        if(i != row) {&#xa;        Table_CharacterChecklist.getModel().setValueAt(false,i, 2);&#xa;        &#xa;}&#xa;}&#xa;}&#xa; //           if (((Boolean) this.Table_CharacterChecklist.getModel().getValueAt(i, 2))) &#xa;}&#xa;    &#xa;}*/" type="code"/>
+            </Property>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0"/>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Table_CharacterChecklistMouseClicked"/>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Table_CharacterChecklistMousePressed"/>
+            <EventHandler event="mouseReleased" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Table_CharacterChecklistMouseReleased"/>
+            <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="Table_CharacterChecklistPropertyChange"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTable() {&#xa;&#xa;    private static final long serialVersionUID = 1L;&#xa;&#xa;    /*@Override&#xa;    public Class getColumnClass(int column) {&#xa;        return getValueAt(0, column).getClass();&#xa;    }*/&#xa;&#xa;    @Override&#xa;    public boolean isCellEditable(int row, int column) {&#xa;        if(column==2) return true;&#xa;        return false;&#xa;    };&#xa;&#xa;    @Override&#xa;    public Class getColumnClass(int column) {&#xa;        switch (column) {&#xa;            case 0:&#xa;            return String.class;&#xa;            case 1:&#xa;            return Integer.class;&#xa;            default:&#xa;            return Boolean.class;&#xa;        }&#xa;    }&#xa;}"/>
+            <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="/*&#xa;Make sure command line argument is the text file with the list of items.&#xa;Open that file first and get list of items&#xa;Then set up JTable with the list of items and a checkbox for each item&#xa;&#xa;&#xa;*/"/>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="int nChar = 0;&#xa;Object[][] table = new Object[nChar][3];&#xa;String[] title = {&quot;Character&quot;, &quot;N&quot;, &quot;Selected&quot;};"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="Button_SaveSample">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save Selection"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button_SaveSampleMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_SaveSampleActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="Button_SaveSample.setEnabled(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_NextImageFile">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Next File"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button_NextImageFileMouseClicked"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Button_NextImageFileActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="Button_NextImageFile.setEnabled(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_PreviousImageFile">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Previous File"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button_PreviousImageFileMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="Button_PreviousImageFile.setEnabled(false);"/>
+      </AuxValues>
+    </Component>
+    <Container class="javax.swing.JPanel" name="Panel_MainImage">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Crosshair Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseMoved" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="Panel_MainImageMouseMoved"/>
+        <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Panel_MainImageMouseEntered"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Panel_MainImageMousePressed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value=" new javax.swing.JPanel(){&#xa;&#xa;    @Override&#xa;    public void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        if(image!=null) {&#xa;&#xa;            if(this.getWidth() != mainPanelW || this.getHeight() != mainPanelH) {&#xa;                scaledImage = getScaledImage(image);&#xa;            }&#xa;            if(scaledImage==null) { scaledImage = getScaledImage(image); }&#xa;            if(scaledImage!=null) {&#xa;                if(scaledImage.getWidth()!=scaledImageW || scaledImage.getHeight()!=scaledImageH) {&#xa;                    scaledImage = getScaledImage(image);&#xa;                }&#xa;            }&#xa;            scaledImageW = scaledImage.getWidth();&#xa;            scaledImageH = scaledImage.getHeight();&#xa;            mainPanelW = this.getWidth();&#xa;            mainPanelH = this.getHeight();&#xa;&#xa;            g.drawImage(scaledImage, 0, 0, this);&#xa;&#xa;            ArrayList&lt;Point2D.Double&gt; pts = sampledPoints.get(images[imageNumber]);&#xa;&#xa;            if (pts != null) {&#xa;                int sN = pts.size();&#xa;                g.setColor(sampledPointsColor);&#xa;                for(Point2D.Double point : pts) {&#xa;                    int x = (int)((double)scaledImageW * point.x);&#xa;                    int y = (int)((double)scaledImageH * point.y);&#xa;                    g.drawRect(x, y, 1, 1);&#xa;&#xa;                }&#xa;                Label_MainImage.setText(&quot;Main Image (Click to set zoomed image). Samples: &quot; + sN);&#xa;            }&#xa;            //System.out.println(&quot;There are &quot; + sN + &quot; points already sampled from &quot; + images[imageNumber]);&#xa;&#xa;            if(sampledXRandom &gt;=0 &amp;&amp; sampledYRandom &gt;= 0 &amp;&amp; CheckBoxMenuItem_RandomizeSampling.isSelected()) {&#xa;&#xa;                double zoom = checkZoom();&#xa;                showW = (int) (((double) Panel_ZoomImage.getWidth() * (double) scaledImage.getWidth() / (double) image.getWidth()) / zoom);&#xa;                showH = (int) (((double) Panel_ZoomImage.getHeight() * (double) scaledImage.getHeight() / (double) image.getHeight()) / zoom);&#xa;&#xa;                int wS = scaledImage.getWidth();&#xa;                int hS = scaledImage.getHeight();&#xa;&#xa;                int w = image.getWidth();&#xa;                int h = image.getHeight();&#xa;&#xa;                int sampledXRandomScaled = (int)((double)sampledXRandom * (double)wS/(double)w);&#xa;                int sampledYRandomScaled = (int)((double)sampledYRandom * (double)hS/(double)h);&#xa;&#xa;                //int rectSize = (int)(0.0025 * (double)w);&#xa;                //if(rectSize == 0 ) rectSize = 5;&#xa;                //int rectX = sampledXRandomScaled - rectSize/2;&#xa;                //int rectY = sampledYRandomScaled - rectSize/2;&#xa;&#xa;                int rectX = sampledXRandomScaled - showW/2;&#xa;                int rectY = sampledYRandomScaled - showH/2;&#xa;                if(rectX &lt; 0) rectX =0;&#xa;                if(rectY &lt; 0) rectY = 0;&#xa;                if(rectX+showW&gt;=wS) rectX=wS-showW;&#xa;                if(rectY+showH&gt;=hS) rectY=hS-showH;&#xa;                g.setColor(rectangleRandomColor);&#xa;                g.drawRect(rectX, rectY, showW, showH);&#xa;                g.setColor(pointRandomColor);&#xa;                g.drawRect(sampledXRandomScaled, sampledYRandomScaled, 1, 1);&#xa;            }&#xa;            else if(mousePositionX &gt;= 0 &amp;&amp; mousePositionY &gt;=0) {&#xa;                g.setColor(rectangleSelectedColor);&#xa;                setShowWidthHeight();&#xa;                //int x = mousePositionX - showW/2;&#xa;                //int y = mousePositionY - showH/2;&#xa;                //if(x&lt;0) x=0;&#xa;                //if(y&lt;0) y=0;&#xa;                //if(x&gt;this.getWidth()-showW) x = this.getWidth()-showW;&#xa;                //if(y&gt;this.getHeight()-showH) y = this.getHeight()-showH;&#xa;                g.drawRect(mousePositionX, mousePositionY, showW, showH);&#xa;                g.setColor(pointSelectedColor);&#xa;                g.drawRect(selectedXMiddle, selectedYMiddle, 1, 1);&#xa;            }&#xa;        }&#xa;&#xa;        if (imageStateHash != null) {&#xa;            setImageState(g);&#xa;        }&#xa;    }&#xa;&#xa;}"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JPanel" name="Panel_ZoomImage">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Crosshair Cursor"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="Panel_ZoomImageMouseDragged"/>
+        <EventHandler event="mouseWheelMoved" listener="java.awt.event.MouseWheelListener" parameters="java.awt.event.MouseWheelEvent" handler="Panel_ZoomImageMouseWheelMoved"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Panel_ZoomImageMousePressed"/>
+        <EventHandler event="componentResized" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="Panel_ZoomImageComponentResized"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel() {&#xa;    @Override&#xa;    public void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        //if(subImage!=null) {&#xa;            //    scaledImage = getScaledImage(subImage);&#xa;            //    g.drawImage(scaledImage, 0, 0, this);&#xa;            //}&#xa;        //System.out.println(&quot;Repainting subimage&quot;);&#xa;        setSubimage();&#xa;        //System.out.println(&quot;Repainting subimage done&quot;);&#xa;&#xa;        //g.setColor(Color.RED);&#xa;        //g.drawRect(selectedXZoom, selectedYZoom, 1, 1);&#xa;    }&#xa;}"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="215" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Container class="javax.swing.JPanel" name="Panel_SampledImage">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder/>
+          </Border>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="componentResized" listener="java.awt.event.ComponentListener" parameters="java.awt.event.ComponentEvent" handler="Panel_SampledImageComponentResized"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel(){&#xa;    @Override&#xa;public void paintComponent(Graphics g) {&#xa;        super.paintComponent(g);&#xa;        //if(currentSample!=null) {&#xa;        //    scaledImage = getScaledImage(currentSample);&#xa;        //    g.drawImage(scaledImage, 0, 0, this);&#xa;        boolean createCurrentSample = true;&#xa;        if(currentSample != null) createCurrentSample = false;&#xa;        if(sampledXTrue &gt;=0 &amp;&amp; sampledYTrue &gt;=0){&#xa;            setSampleImage(sampledXTrue, sampledYTrue, createCurrentSample);&#xa;            }&#xa;    }&#xa;}"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="215" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Component class="javax.swing.JLabel" name="Label_WindowSize">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Medium"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextField_ZoomFactor">
+      <Properties>
+        <Property name="columns" type="int" value="3"/>
+        <Property name="text" type="java.lang.String" value="1000"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextField_ZoomFactorActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_ZoomFactorKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextField_WindowSize">
+      <Properties>
+        <Property name="columns" type="int" value="3"/>
+        <Property name="text" type="java.lang.String" value="1000"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_WindowSizeKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_RandomImage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Random Image"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button_RandomImageMouseClicked"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="Button_RandomImage.setEnabled(false);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextField_OverviewSize">
+      <Properties>
+        <Property name="columns" type="int" value="3"/>
+        <Property name="text" type="java.lang.String" value="20000"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_OverviewSizeKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_OverviewSize">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Large"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ComboBox_AddedAttributeList">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="new javax.swing.DefaultComboBoxModel&lt;&gt;(new String[] {  })" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ComboBox_AddedAttributeListActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_AddedAttribute">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Added Attribute"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_LocalSize">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Small"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextField_LocalSize">
+      <Properties>
+        <Property name="columns" type="int" value="3"/>
+        <Property name="text" type="java.lang.String" value="1000"/>
+      </Properties>
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_LocalSizeKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_ClickMainImage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Zoom:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_ClickZoomedImage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Selected Sample (Click above to set):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_MainImage">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Main Image (Click to set zoomed imaged):"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_RandomPixel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Next Random Pixel"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button_RandomPixelMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Button_ResetCharacters">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reset Characters"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="Button_ResetCharactersMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="ComboBox_ImageFiles">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="0"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="itemStateChanged" listener="java.awt.event.ItemListener" parameters="java.awt.event.ItemEvent" handler="ComboBox_ImageFilesItemStateChanged"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JSlider" name="Slider_Zoom">
+      <Properties>
+        <Property name="maximum" type="int" value="1500"/>
+        <Property name="minimum" type="int" value="20"/>
+        <Property name="value" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="(int)(this.defaultZoom*100.0)" type="code"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="stateChanged" listener="javax.swing.event.ChangeListener" parameters="javax.swing.event.ChangeEvent" handler="Slider_ZoomStateChanged"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TextField_ImageNumber">
+      <Properties>
+        <Property name="columns" type="int" value="5"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextField_ImageNumberActionPerformed"/>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_ImageNumberKeyPressed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Label_SampleNumber">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sample Number: 0"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CheckBox_ResetOnSave">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Reset on save"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="CheckBox_MutuallyExclusive">
+      <Properties>
+        <Property name="selected" type="boolean" value="true"/>
+        <Property name="text" type="java.lang.String" value="Mutually Exclusive Characters"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>

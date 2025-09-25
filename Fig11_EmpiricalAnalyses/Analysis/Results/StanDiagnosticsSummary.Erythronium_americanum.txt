@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Erythronium_americanum	509	357	0	0	0.973290548168885

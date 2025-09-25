@@ -1,0 +1,9 @@
+The goal of Fig. 2 is to conceptually illustrate the 6 scenarios using a 6-paneled figure.
+
+To make Fig. 2 from R terminal when directory set to this directory: 
+source("makeFig2.ConceptualParadoxes.R")
+pdf("Fig2.phenologyParadox.pdf")
+makePlot()
+dev.off()
+
+Refinements done manually using Inkscape.

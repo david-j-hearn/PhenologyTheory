@@ -1,0 +1,11 @@
+This code requires the external package: ForestFit (https://cran.r-project.org/web/packages/ForestFit/index.html)
+
+Source demo.Distributions.BB.R in R to make the figures:
+
+pdf("Fig3_SimulationvsTheory.BB.pdf")
+source("demo.Distributions.BB.R")
+dev.off()
+
+Refinements were done manually using InkScape
+
+

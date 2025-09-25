@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Claytonia_virginica	940	658	0	0	1.04549174693386

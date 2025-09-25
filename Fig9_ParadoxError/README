@@ -1,0 +1,12 @@
+To make the figure with the comparison of accuracies for Bayesian GP, quantile regression, and standard regression, run the following from the R terminal prompt:
+
+source("makeFig9.paradoxes.aE.R")
+
+The makeFig9.paradoxes.aE.R script will produce two files. To generate the figure in the phenology paradox MS, the contents of these separate files were merged into one figure manually using InkScape. Additional refinements were made manually using InkScape. The two files are:
+
+Fig9.error.pdf: provides the average absolute error on slopes (upper number in MS Fig. 9)
+Fig9.sign.pdf: provides the proportion of simulation replicates for which the slope sign was correctly identified (lower number in MS Fig. 9)
+
+The makeFig9.paradoxes.aE.R script uses simulation results stored in the file results.X.AE.txt. 
+
+To recreate the data in results.X.AE.txt, run simulations by following the README instructions in the Simulation subdirectory.

@@ -1,0 +1,6 @@
+To generate the simulated data used to analyse model identifiability, run the runAnalysis.sh script. If you do not have a sufficient number of CPU (at least 20), then edit runAnalysis.sh to alter the number of parallel processes. Once the processes are finished, concatenate the files, sort, and remove all but one header line. 
+
+Alternatively, one can run an indivdiual instance of the simulation script as follows from the R terminal command line to generate output in a file called "output.txt":
+
+source("examineMLE.R")
+run_Analysis5(outputFile = "output.txt", nrep = 1000, seed=5001, append=F)

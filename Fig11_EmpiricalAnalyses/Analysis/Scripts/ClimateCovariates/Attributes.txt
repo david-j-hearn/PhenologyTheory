@@ -1,0 +1,17 @@
+1	Anemone_quinquefolia
+2	Camassia_scilloides
+3	Cardamine_concatenata
+4	Claytonia_virginica
+5	Collinsia_verna
+6	Dicentra_cucullaria
+7	Enemion_biternatum
+8	Erythronium_americanum
+9	Mertensia_virginica
+10	Podophyllum_peltatum
+11	Primula_meadia
+12	Sanguinaria_canadensis
+13	Thalictrum_thalictroides
+14	Dentaria_concatenata
+15	Isopyrum_biternatum
+16	Dodecatheon_meadia
+17	Anemone_thalictroides

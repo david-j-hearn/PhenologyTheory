@@ -1,0 +1,26 @@
+Code in this directory generates the simulation data used to compare Bayesian GP inferences to quantile and standard regression. 
+
+To generate these data for Scenario 1 (+++), run the following from the R terminal:
+
+source("validateParadox.TakeV.QRPrior.R")
+run_AnalysisParadox(replicates=1000, outputFile="output.1.txt", scenarioNumber=1, append=F, seed=12345)
+
+This will create a file called "output.1.txt" with the results. 
+
+If you wish to generate data for a different scenario, replace the number 1 in scenarioNumber=1 with any number between 1 and 6 inclusive.
+
+The following are the scenarios. '+' indicates a positive slope, '-' indicates a negative slope, Onset (onset model slope), Dur (duration model slope), Obs (slope of model fit to observed collection dates)
+
+
+    Onset   Dur Obs
+1   +   +   +   STANDARD
+2   +   -   +
+3   +   -   -   PARADOX
+4   -   -   -   STANDARD
+5   -   +   -
+6   -   +   +   PARADOX
+7   -   -   +   IMPOSSIBLE with sufficiently large sample size
+8   +   +   -   IMPOSSIBLE with sufficiently large sample size
+
+
+

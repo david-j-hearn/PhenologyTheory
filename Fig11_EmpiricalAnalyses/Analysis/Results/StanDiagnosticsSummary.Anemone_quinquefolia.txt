@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Anemone_quinquefolia	350	245	0	0	0.983380609398448

@@ -1,0 +1,11 @@
+This figure investigates the relationship between the variance of the distribution of observed collection times, the variance in the onset and cessation, and the perception of duration. 
+
+The conclusion is that variance of the distribution of observed collection times is not a valid proxy for duration. 
+
+To make the figure, run the following from an R terminal prompt:
+
+pdf("Fig13_VarianceVsDuration.pdf")
+source("makeFig13.VarianceVsDuration.R")
+dev.off()
+
+Additional refinements were done manually using InkScape.

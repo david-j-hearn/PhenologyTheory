@@ -1,0 +1,11 @@
+This figure explores how model misspecification during inference influences error rates. 
+
+To generate the figure, run the following code from an R terminal:
+
+pdf("Fig4_ModelMisspecification.pdf")
+source("makeFig4.R")
+dev.off()
+
+Once the above code was run, further refinements were manually added using InkScape.
+
+The above code relies on summaries of simulated data contained in the file results.CFq.txt. To generate these data, follow the README file in the Simulation subdirectory. Multiple separate instances of this code were run in parallel.

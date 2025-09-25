@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Cardamine_concatenata	282	198	0	0	0.970362701542717

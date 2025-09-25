@@ -1,0 +1,13 @@
+These scripts summarize phenological sensitivities for all species and any covariates of interest. 
+
+The script makeIntervalGraph.R will make a separate figure for each covariate. These were merged manually in InkScape to make Fig. 11 in the MS. The default is to process average annual temperature and average spring temperature, but this can be edited in the script. 
+
+To select different covariates, edit the following line in the script and remove covariates that are not of interest:
+
+#covariates = c("SpringMonthlyAverageTemp", "Latitude", "Elevation", "Year","AnnualMonthlyAverageTemp","FirstQuarterMonthlyAverageTemp")
+
+To generate a pdf file for each selected covariate, run the following from the R terminal prompt:
+
+source("makeIntervalGraph.R")
+
+The script relies on specimen sample size, covariate descriptive statistics, and Stan output summaries present in the files TableX.empiricalResultsSummary.txt.csv and TableX.dataSummary.txt.csv. To regenerate the data in the TableX files, follow the README file instructions in the Analysis subdirectory. The results will vary slightly depending on the random number seeds used by Stan at the time of analysis.

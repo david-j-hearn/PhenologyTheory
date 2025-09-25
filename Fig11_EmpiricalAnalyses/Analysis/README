@@ -1,0 +1,35 @@
+The runEmpirical.R script carries out the Bayesian GP pipeline for a provided set of species and covariate data. 
+
+The script expects the covariate data to be in files in the climateData/Extract/ folder and it expects the specimen data to be in a Data directory. Example directories and data files are provided for the spring ephemeral species. Each file has the species name with and underscore separating the genus and specific epithet.
+
+The specimen and climate data were extracted using scripts in subfolders of the Scripts subfolder. Consult associated README files for additional information about these scripts. 
+
+To run the analyses, run the following from the command line:
+
+source("runEmpirical.R")
+runEmpiricalAnalysis(species="Camassia_scilloides", removeOutliers=TRUE, makePlots=FALSE)
+
+Most of the parameters for the runEmpiricalAnalysis were left at defaults in the above. Change the species name as desired.
+
+The runEmpiricalAnalysis script expects:
+*A species name that matches the species name in the Data files. For example: Camassia_scilloides corresponds to the Camassia_scilloides.csv in the Data directory
+*A vector of names of covariates for the onset model. The default is: c("SpringMonthlyAverageTemp", "Latitude", "Elevation", "Year","AnnualMonthlyAverageTemp", "FirstQuarterMonthlyAverageTemp") corresponding to the headers / columns in the climateData/Extract files.
+*A vector of names of covariates for the duration model. The default is: c("SpringMonthlyAverageTemp", "Latitude", "Elevation", "Year","AnnualMonthlyAverageTemp", "FirstQuarterMonthlyAverageTemp")
+*A name for the results directory. The default is "Results"
+
+The results will be in the Results directory in the files dataSummary.Camassia_scilloides.txt, StanDiagnosticsSummary.Camassia_scilloides.txt, and StanResultsSummary.Camassia_scilloides.txt. Posterior predictive plots for each of the variables will be made if 'makePlots' function parameter is set to TRUE:
+
+posteriorPredictivePlot.Camassia_scilloides.AnnualMonthlyAverageTemp.pdf
+posteriorPredictivePlot.Camassia_scilloides.Elevation.pdf
+posteriorPredictivePlot.Camassia_scilloides.Latitude.pdf
+posteriorPredictivePlot.Camassia_scilloides.SpringMonthlyAverageTemp.pdf
+posteriorPredictivePlot.Camassia_scilloides.Year.pdf
+
+To run the pipeline for all species, and provided 13 CPU are available, run the following from the Linux command line:
+
+sh runEmpirical.sh
+
+To generate the results files used to make the figure in the parent directory, concatenate the StanResultsSummary.*.txt files for all the species of interest, and concatenate the dataSummary.*.txt files. These concatenated files correspond to the TableX.empiricalResultsSummary.txt.csv and TableX.dataSummary.txt.csv files in the parent directory that are needed to make the figure. The TableX files are further edited. Remove all but the top header lines. Remove all the 'NA' values, and replace '_' with ' ', then format as a tab delimited text file rather than csv file.
+
+
+

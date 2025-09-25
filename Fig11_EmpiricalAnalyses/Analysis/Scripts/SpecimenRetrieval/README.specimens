@@ -1,0 +1,4 @@
+The getImageURLS.R code downloads image data and elevation data for all the specimens. 
+It depends on the Attributes files that simply list the species names, contained in /home/david/Documents/Projects/HerbariumConfounding/FinalAttempt/Analyses/A7_Empirical/HerbariumDNN/HerbariumDNNFolders/Attributes/Attributes.txt
+
+Note that this script is not intended for public usage but is provided for those reviewers who would like to see the full code used to obtain the data. There are values that are hard-coded in this script, so the script itself would need to be edited for use by others. 

@@ -1,0 +1,1 @@
+The code validateSimulated_noCovariates.R defines a function run_Analysis1 that performs simulations and analyses of the simulated data, generating a large output file of the detailed results. These results are used to generate some figures in the phenology paradox manuscript.

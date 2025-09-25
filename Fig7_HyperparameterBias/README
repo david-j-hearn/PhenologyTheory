@@ -1,0 +1,16 @@
+The prior has an influence on inferences. In this figure, the effect of the difference between the mean prior hyperparameter and the true parameter value on the error on the duration is investigated. 
+
+The code requires minimally the following packages:
+MASS
+survival
+stats4
+fitdistrplus
+ggplot2
+
+Run the following in an R terminal to make the figure:
+
+pdf("Fig7_hyperparameterBias.pdf")
+source("makeFig7.R")
+dev.off()
+
+This script uses summaries of simulations saved in the file "results.CFq.txt". If one would like to recreate the data in this file, please follow the README file in the Fig4_ModelMisspecification/Simulation directory.

@@ -1,0 +1,14 @@
+
+To generate the simlulation data to analyze the Pearse et al estimator, run the runAnalysis.sh script. 
+This script calls several processes in parallel. 
+
+After the script finishes concatenate all the results from the output.P* files into a single file, sort it, and remove all but one header line.
+
+If your machine does not have at least 20 CPU available, edit the runAnalysis.sh file and reduce the number of processes run by commenting out lines as necessary.
+
+Alternatively, to run a single process, run the following from an R terminal:
+
+source("run_PearseAnalysis.R")
+run_PearseAnalysis(replicates=100, outputFile="output.P.txt")
+
+This will generate output in an output file called output.P.txt

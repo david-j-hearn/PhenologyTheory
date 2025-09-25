@@ -1,0 +1,19 @@
+Goal of this figure is to illustrate how well the GP does to fit the BB model in a case where there is not a shared variance between the onset and the duration / cessation distributions.  Doesn't do well when the observed distibution is highly asymmetrical.
+
+This code requires: 
+
+cmdstanr with stan
+bayesplot
+tidyverse
+posterior
+dplyr
+
+Note that depending on the seed used, results may vary slightly
+
+Refinements added using InkScape
+
+To make the figure, from the R terminal run:
+
+pdf("Fig5_PathologicalCase.pdf")
+source("makeFig5.R")
+dev.off()

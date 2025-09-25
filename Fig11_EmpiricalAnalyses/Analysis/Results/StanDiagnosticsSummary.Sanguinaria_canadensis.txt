@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Sanguinaria_canadensis	424	297	0	0	1.00122078245759

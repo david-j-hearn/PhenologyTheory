@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Dicentra_cucullaria	676	474	0	0	1.02919067805567

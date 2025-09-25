@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Podophyllum_peltatum	717	502	0	0	1.03780990511481

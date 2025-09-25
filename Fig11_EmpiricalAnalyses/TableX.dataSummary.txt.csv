@@ -1,0 +1,131 @@
+Species	Variable	N	Min	Max	Mean	SD
+Anemone quinquefolia	N All Specimens	728	 	 	 	 
+Anemone quinquefolia	N Reproductive Specimens with Image	396	 	 	 	 
+Anemone quinquefolia	N Filtered Specimens	350	 	 	 	 
+Anemone quinquefolia	Response Variable: DOY	350	96	157	126.225714285714	10.3803275162717
+Anemone quinquefolia	Covariate: AnnualMonthlyAverageTemp	350	4.60425529566904	15.5290257881085	9.53699702415128	1.628809116893
+Anemone quinquefolia	Covariate: Elevation	350	0.17	997.04	268.568285714286	202.9376866206
+Anemone quinquefolia	Covariate: FirstQuarterMonthlyAverageTemp	350	-8.07385047276815	7.00488806515932	-0.927911300286651	2.45186230456382
+Anemone quinquefolia	Covariate: Latitude	350	34.497198	46.5751	40.8548386226829	1.2588482643513
+Anemone quinquefolia	Covariate: SpringMonthlyAverageTemp	350	3.67937994003296	14.4261155302326	8.51377576429929	1.84512953496326
+Anemone quinquefolia	Covariate: Year	350	1859.27671232877	2021.27397260274	1947.82855410478	37.3997126594978
+Camassia scilloides	N All Specimens	436	 	 	 	 
+Camassia scilloides	N Reproductive Specimens with Image	168	 	 	 	 
+Camassia scilloides	N Filtered Specimens	144	 	 	 	 
+Camassia scilloides	Response Variable: DOY	144	88	164	124.763888888889	17.7468547833371
+Camassia scilloides	Covariate: AnnualMonthlyAverageTemp	144	7.09943765231098	21.0191992614418	13.3720731089944	3.14964512737416
+Camassia scilloides	Covariate: Elevation	144	21.83	439.31	200.229652777778	89.5781571263013
+Camassia scilloides	Covariate: FirstQuarterMonthlyAverageTemp	144	-7.72150244315465	14.8403556148211	3.37197237137567	4.58922237965031
+Camassia scilloides	Covariate: Latitude	144	30.505142	42.941574	37.8081328159028	3.11007348963011
+Camassia scilloides	Covariate: SpringMonthlyAverageTemp	144	6.13180322448413	20.6508866523703	12.8959830669962	3.46193309475449
+Camassia scilloides	Covariate: Year	144	1871.37260273973	2021.34794520548	1961.99856744517	36.6234686884535
+Cardamine concatenata	N All Specimens	1133	 	 	 	 
+Cardamine concatenata	N Reproductive Specimens with Image	315	 	 	 	 
+Cardamine concatenata	N Filtered Specimens	282	 	 	 	 
+Cardamine concatenata	Response Variable: DOY	282	45	148	105.482269503546	18.1616320918654
+Cardamine concatenata	Covariate: AnnualMonthlyAverageTemp	282	4.55289860690633	20.1956220977008	11.9852144390996	2.85717050848461
+Cardamine concatenata	Covariate: Elevation	282	0.29	619.13	155.921595744681	103.007753458337
+Cardamine concatenata	Covariate: FirstQuarterMonthlyAverageTemp	282	-9.17049928506215	14.1740975876649	1.8566971404751	4.34409064748247
+Cardamine concatenata	Covariate: Latitude	282	30.5797452854	46.56887	39.2495418080025	2.77672284808864
+Cardamine concatenata	Covariate: SpringMonthlyAverageTemp	282	3.52759208281835	21.2149184942245	11.3207178406184	3.15704758274521
+Cardamine concatenata	Covariate: Year	282	1871.26575342466	2021.27397260274	1965.65840116818	36.1419258952534
+Claytonia virginica	N All Specimens	1814	 	 	 	 
+Claytonia virginica	N Reproductive Specimens with Image	1057	 	 	 	 
+Claytonia virginica	N Filtered Specimens	940	 	 	 	 
+Claytonia virginica	Response Variable: DOY	940	52	156	113.828723404255	17.5806501382752
+Claytonia virginica	Covariate: AnnualMonthlyAverageTemp	940	5.11747101694345	19.5990787744522	11.6387970861183	2.23777845037015
+Claytonia virginica	Covariate: Elevation	940	0.5	677.23	184.815159574468	123.122299082191
+Claytonia virginica	Covariate: FirstQuarterMonthlyAverageTemp	940	-9.009707848231	12.9995783964793	1.45891470494581	3.25602393951783
+Claytonia virginica	Covariate: Latitude	940	31.747875	44.9992	39.5069755790121	1.87815141099135
+Claytonia virginica	Covariate: SpringMonthlyAverageTemp	940	3.76024480660756	20.7096005280813	10.9036819527798	2.58706879232403
+Claytonia virginica	Covariate: Year	940	1850.38630136986	2021.33150684932	1959.95785109409	35.1062258900071
+Collinsia verna	N All Specimens	231	 	 	 	 
+Collinsia verna	N Reproductive Specimens with Image	144	 	 	 	 
+Collinsia verna	N Filtered Specimens	124	 	 	 	 
+Collinsia verna	Covariate: Response Variable: DOY	124	100	155	127.008064516129	10.6941941301514
+Collinsia verna	Covariate: AnnualMonthlyAverageTemp	124	8.0110150873661	14.5204041997592	11.1509319458955	1.26805108614479
+Collinsia verna	Covariate: Elevation	124	112.41	499.18	267.674838709677	72.6926826087181
+Collinsia verna	Covariate: FirstQuarterMonthlyAverageTemp	124	-3.64933013916016	5.48660399516424	0.895129109482451	2.00451208837417
+Collinsia verna	Covariate: Latitude	124	36.29608	41.888071	39.8418281903044	1.06750004817068
+Collinsia verna	Covariate: SpringMonthlyAverageTemp	124	7.02136352658272	14.4529598156611	10.3361104689338	1.65488436020924
+Collinsia verna	Covariate: Year	124	1869.40273972603	2021.33150684932	1960.94174019448	38.6971811464883
+Dicentra cucullaria	N All Specimens	1615	 	 	 	 
+Dicentra cucullaria	N Reproductive Specimens with Image	820	 	 	 	 
+Dicentra cucullaria	N Filtered Specimens	676	 	 	 	 
+Dicentra cucullaria	Response Variable: DOY	676	72	148	109.468934911243	12.7763872267402
+Dicentra cucullaria	Covariate: AnnualMonthlyAverageTemp	676	3.96335958627363	16.9651322240631	11.0667185486908	2.20059562307166
+Dicentra cucullaria	Covariate: Elevation	676	-0.22	1257.31	218.183150887574	198.007250726157
+Dicentra cucullaria	Covariate: FirstQuarterMonthlyAverageTemp	676	-9.56774274508158	8.92171148955822	1.08773274387553	3.14395190579183
+Dicentra cucullaria	Covariate: Latitude	676	34.31739	47.611505	39.9070386918097	2.39671610754786
+Dicentra cucullaria	Covariate: SpringMonthlyAverageTemp	676	2.40985242525736	17.3918230136236	10.2921262890453	2.56669796560905
+Dicentra cucullaria	Covariate: Year	676	1862.29589041096	2021.31232876712	1955.59283431908	34.0693602269298
+Enemion biternatum	N All Specimens	433	 	 	 	 
+Enemion biternatum	N Reproductive Specimens with Image	115	 	 	 	 
+Enemion biternatum	N Filtered Specimens	110	 	 	 	 
+Enemion biternatum	Response Variable: DOY	110	40	151	112.118181818182	21.8307635046509
+Enemion biternatum	Covariate: AnnualMonthlyAverageTemp	110	5.17091294750571	20.1609383132309	11.924985840228	3.0055108976135
+Enemion biternatum	Covariate: Elevation	110	24.3	424.22	204.011636363636	77.4747416729978
+Enemion biternatum	Covariate: FirstQuarterMonthlyAverageTemp	110	-7.91416831811269	15.6670668919881	1.62016208054441	4.57317589964621
+Enemion biternatum	Covariate: Latitude	110	30.4584597305	45.2505556	38.8613132865964	2.88488952018185
+Enemion biternatum	Covariate: SpringMonthlyAverageTemp	110	3.66034489870071	21.0585074424744	11.3183897027012	3.29245266894822
+Enemion biternatum	Covariate: Year	110	1883.41095890411	2021.31232876712	1947.73150086084	34.9059497578677
+Erythronium americanum	N All Specimens	896	 	 	 	 
+Erythronium americanum	N Reproductive Specimens with Image	547	 	 	 	 
+Erythronium americanum	N Filtered Specimens	509	 	 	 	 
+Erythronium americanum	Response Variable: DOY	509	62	148	108.952848722986	14.5872927907577
+Erythronium americanum	Covariate: AnnualMonthlyAverageTemp	509	5.8855680708463	18.4810383686175	11.3903162173552	2.36437120146576
+Erythronium americanum	Covariate: Elevation	509	-0.22	1204.72	215.731394891945	163.458949226115
+Erythronium americanum	Covariate: FirstQuarterMonthlyAverageTemp	509	-7.24108409881592	11.6423266728719	1.37559421173374	3.3837010915696
+Erythronium americanum	Covariate: Latitude	509	32.54404	45.033333	39.4415155888856	2.21482849494886
+Erythronium americanum	Covariate: SpringMonthlyAverageTemp	509	4.04649480183919	17.9010802209377	10.6160973932279	2.7645945490666
+Erythronium americanum	Covariate: Year	509	1869.3095890411	2020.25409836066	1965.50182891058	31.7108974669394
+Mertensia virginica	N All Specimens	711	 	 	 	 
+Mertensia virginica	N Reproductive Specimens with Image	459	 	 	 	 
+Mertensia virginica	N Filtered Specimens	411	 	 	 	 
+Mertensia virginica	Response Variable: DOY	411	73	158	116.892944038929	14.1510397392467
+Mertensia virginica	Covariate: AnnualMonthlyAverageTemp	411	6.32158968038857	15.4088273569942	11.3858096777935	1.67000467686133
+Mertensia virginica	Covariate: Elevation	411	-0.69	507.4	180.257883211679	111.846034613119
+Mertensia virginica	Covariate: FirstQuarterMonthlyAverageTemp	411	-5.71566625187794	8.29799890518188	1.36747635541135	2.62884739633168
+Mertensia virginica	Covariate: Latitude	411	35.728142	43.060567	39.6804083945121	1.20479045883688
+Mertensia virginica	Covariate: SpringMonthlyAverageTemp	411	5.00597451378902	15.9549368023872	10.6423479378622	2.01115589689808
+Mertensia virginica	Covariate: Year	411	1845.2904109589	2021.31232876712	1953.71636053152	37.3956269714156
+Podophyllum peltatum	N All Specimens	1863	 	 	 	 
+Podophyllum peltatum	N Reproductive Specimens with Image	816	 	 	 	 
+Podophyllum peltatum	N Filtered Specimens	717	 	 	 	 
+Podophyllum peltatum	Response Variable: DOY	717	69	163	124.221757322176	18.4013199590984
+Podophyllum peltatum	Covariate: AnnualMonthlyAverageTemp	717	6.20726487537225	20.1609383132309	12.2449518955691	3.01644239301878
+Podophyllum peltatum	Covariate: Elevation	717	-0.62	702.05	187.143263598326	144.55867793636
+Podophyllum peltatum	Covariate: FirstQuarterMonthlyAverageTemp	717	-5.39740598201752	15.1318565209707	2.40828919445863	4.13589774808988
+Podophyllum peltatum	Covariate: Latitude	717	30.2305167467	43.589753	38.6871187367128	2.82260273035833
+Podophyllum peltatum	Covariate: SpringMonthlyAverageTemp	717	4.53677995254596	21.5319723288218	11.6024821633391	3.41374053773322
+Podophyllum peltatum	Covariate: Year	717	1861.38356164384	2021.34794520548	1960.11003993046	32.8930871962742
+Primula meadia	N All Specimens	266	 	 	 	 
+Primula meadia	N Reproductive Specimens with Image	99	 	 	 	 
+Primula meadia	N Filtered Specimens	86	 	 	 	 
+Primula meadia	Response Variable: DOY	86	84	171	127.976744186047	18.987907448557
+Primula meadia	Covariate: AnnualMonthlyAverageTemp	86	7.18849329650402	18.5414375923574	12.1133158717651	2.51197901322541
+Primula meadia	Covariate: Elevation	86	85.4	397.65	206.508953488372	60.4586583110664
+Primula meadia	Covariate: FirstQuarterMonthlyAverageTemp	86	-5.22098982334137	11.1340915262699	1.84318644081264	3.61381805318777
+Primula meadia	Covariate: Latitude	86	32.4664722	42.3671133866	38.7276010518465	2.34404729204062
+Primula meadia	Covariate: SpringMonthlyAverageTemp	86	7.02867505947749	18.3382473985354	11.7529447164329	2.74925384487282
+Primula meadia	Covariate: Year	86	1900.40547945205	2018.30136986301	1945.62674801588	29.5637871832722
+Sanguinaria canadensis	N All Specimens	1564	 	 	 	 
+Sanguinaria canadensis	N Reproductive Specimens with Image	502	 	 	 	 
+Sanguinaria canadensis	N Filtered Specimens	424	 	 	 	 
+Sanguinaria canadensis	Response Variable: DOY	424	55	142	106.693396226415	14.7197734132263
+Sanguinaria canadensis	Covariate: AnnualMonthlyAverageTemp	424	3.39269112609327	20.1006818314393	11.0501826928876	2.51614413316787
+Sanguinaria canadensis	Covariate: Elevation	424	-0.13	635.8	173.211391509434	120.347058894615
+Sanguinaria canadensis	Covariate: FirstQuarterMonthlyAverageTemp	424	-11.5359075466792	13.8903216520945	0.763420306190075	3.58260586646309
+Sanguinaria canadensis	Covariate: Latitude	424	30.8128	46.915823	39.8809509889631	2.28630109588415
+Sanguinaria canadensis	Covariate: SpringMonthlyAverageTemp	424	1.94965045899153	21.0585074424744	10.1260609606269	2.82765509796227
+Sanguinaria canadensis	Covariate: Year	424	1862.30136986301	2020.24043715847	1948.82950069348	36.3049466095797
+Thalictrum thalictroides	N All Specimens	1163	 	 	 	 
+Thalictrum thalictroides	N Reproductive Specimens with Image	651	 	 	 	 
+Thalictrum thalictroides	N Filtered Specimens	590	 	 	 	 
+Thalictrum thalictroides	Response Variable: DOY	590	53	166	118.710169491525	18.5255038714036
+Thalictrum thalictroides	Covariate: AnnualMonthlyAverageTemp	590	6.00853889808059	19.912565668424	11.2661764450563	2.33966672314832
+Thalictrum thalictroides	Covariate: Elevation	590	-0.22	768.38	251.479881355932	138.831835125443
+Thalictrum thalictroides	Covariate: FirstQuarterMonthlyAverageTemp	590	-6.6735196908315	12.8242550690969	1.17181774286901	3.34477838876884
+Thalictrum thalictroides	Covariate: Latitude	590	30.5797452854	44.30894	39.420621020656	2.11347938322878
+Thalictrum thalictroides	Covariate: SpringMonthlyAverageTemp	590	3.3160538127025	20.3855579892794	10.5773299830655	2.69696557453362
+Thalictrum thalictroides	Covariate: Year	590	1880.34426229508	2021.33150684932	1955.29004449486	34.4925392375321

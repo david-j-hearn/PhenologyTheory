@@ -1,0 +1,13 @@
+Run runAnalysis.sh from the Linux command line to generate simulation data for all Scenarios. 
+
+Alternatively, run the following from the R terminal prompt:
+
+source("validateParadox.R")
+run_AnalysisParadox(replicates = 1000, outputFile="output.redo.S2.txt", scenarioNumber = 2, append=F, seed=2001)
+
+Replace the number 2 in scenarioNumber = 2 with any number 1 through 6 to simulate data for the numbered Scenario. 
+
+The output is sensitive to the ranges of parameter values that are settable in validateParadox.R.
+
+
+

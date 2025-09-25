@@ -1,0 +1,5 @@
+The java program in the jar file DNN_ImageSampler-1.0-SNAPSHOT.jar was developed and used to screen specimen images. This program can be run from the command line as your java binary is at least jdk-19: java -jar DNN_ImageSampler-1.0-SNAPSHOT.jar 
+
+This program is for reviewers to provide the program used to screen images for phenological state. Full details will be provided in a subsequent publication. The core usage for this program is to obtain samples for supervised machine learning and its documentation is beyond the scope of this MS.
+
+The java source code is in the src subdirectory.

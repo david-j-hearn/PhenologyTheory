@@ -1,0 +1,13 @@
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Camassia_scilloides\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Anemone_quinquefolia\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Cardamine_concatenata\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Claytonia_virginica\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Collinsia_verna\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Dicentra_cucullaria\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Enemion_biternatum\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Erythronium_americanum\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Mertensia_virginica\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Podophyllum_peltatum\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Primula_meadia\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Sanguinaria_canadensis\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &
+nohup R --vanilla -e "source(\"runEmpirical.R\"); runEmpiricalAnalysis(species=\"Thalictrum_thalictroides\", removeOutliers=TRUE, makePlots=TRUE)" > /dev/null 2> /dev/null &

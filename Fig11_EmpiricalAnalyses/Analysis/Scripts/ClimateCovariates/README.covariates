@@ -1,0 +1,7 @@
+The ExtractData.R script extracts climate data from the Berkeley Earth data file. 
+
+This script is not intended for public use but rather is for interested reviewers to provide the code used to extract the climate data associated with the locations specimens were collected. The script has hard-coded directory information that would need to be edited for interested users. Additionally, the Berkeley Earth data files are not provided here, as they are available for free from https://berkeleyearth.org/data/
+
+The specific Berkeley Earth file used was North_America_Land_TAVG_Gridded_0p25deg.nc which was made available by request at the Berkeley Earth website. 
+
+

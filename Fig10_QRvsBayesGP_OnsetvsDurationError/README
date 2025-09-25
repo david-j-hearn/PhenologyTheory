@@ -1,0 +1,8 @@
+To make the figure that compares the onset inference error rate as a function of duration between Bayesian GP and QR, run the following from the R terminal prompt:
+
+source("makeFig10_QRvBayesianGP.R")
+
+The resulting file Fig10.quantileRegressionComparison.pdf provides a summary of the data in results.firstPass.txt. 
+
+To regenerate similar data, follow the README in the Simulation subdirectory. Run at least 5000 replicates for each Scenario, or comment out the line 'data = data[1:5000, ]' in the makeFig10_QRvBayesianGP.R file. Concatenate the output files, sort reverse unique to remove all but one header line. 
+

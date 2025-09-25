@@ -1,0 +1,17 @@
+This figure addresses the issue of model identifiability by comparing MLE to Bayesian GP inferences. 
+
+Model identifiability is an issue for MLE. Including a prior as a penalizer / regularizer ameliorates this issue.
+
+The figure was initially made in two parts: p1 and p2. These were joined and further refined using InkScape.
+
+To run the code that generates these parts, cowplot and ggplot2 are required packages.
+
+To make the two parts, run the following from an R terminal:
+
+source("makeFig6.R")
+
+This will produce two pdf files with p1 and p2 as part of the file name.
+
+The data used to make these plots are contained in the results.I.txt file. 
+
+If one wishes to regenerate these simulation results, follow the README file in the Simulation directory. 

@@ -1,0 +1,2 @@
+taxon.name	n.total	n.inference	num_divergent	num_max_treedepth	ebfmi
+Collinsia_verna	124	87	0	0	1.00674091653123

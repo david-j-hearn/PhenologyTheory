@@ -1,0 +1,7 @@
+The code and data to make the posterior predictive plots is in the Fig11_EmpiricalAnalyses/Analysis folder in the parent directory of the directory with the file you are reading. 
+
+To make the plots, check the README file in that Analysis directory for instructions. 
+
+Set the makePlots function parameter to TRUE when calling the runEmpiricalAnalysis function, e.g., runEmpiricalAnalysis(species="Claytonia_virginica", removeOutliers=TRUE, makePlots=TRUE). 
+
+The pdf files with the generated posterior predictive plots will be in the Results directory, e.g., posteriorPredictivePlot.Erythronium_americanum.SpringMonthlyAverageTemp.pdf. One file per selected covariate will be made. 
