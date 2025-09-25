@@ -12,31 +12,31 @@ To generate the datasets used for publication, some of the simulations and analy
 
 To run the code provided, the following R libraries and their dependencies will be needed for one or more figures, simulations, or analyses:
 
-bayesplot
-cmdstanr
-cowplot
-dplyr
-elevatr
-fitdistrplus
-ggplot2
-here
-latex2exp
-magick
-ncdf4
-phest from github.com/willpearse/phest
-posterior
-purrr
-quantreg
-raster
-readr
-rgdal
-ridigbio
-sn
-sp
-stringr
-tibble
-tidyr
-tidyverse
+bayesplot,
+cmdstanr,
+cowplot,
+dplyr,
+elevatr,
+fitdistrplus,
+ggplot2,
+here,
+latex2exp,
+magick,
+ncdf4,
+phest from github.com/willpearse/phest,
+posterior,
+purrr,
+quantreg,
+raster,
+readr,
+rgdal,
+ridigbio,
+sn,
+sp,
+stringr,
+tibble,
+tidyr,
+tidyverse,
 viridis
 
 These can be obtained at CRAN (https://cran.r-project.org/) through the standard install.packages R command except for phest, for which a URL is provided above.
