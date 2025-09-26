@@ -16,6 +16,7 @@ data_wBias$err.O1 = data_wBias$TheorParam_ExpectedFirstOnset_fromTrueModel - dat
 data_wBias$err.P = data_wBias$TheorParam_PeakPhenophase_fromTrueModel - data_wBias$EstTheor_Stan_HMC_PeakPhenophase
 
 set.seed(42)
+#simulation of 1000 replicates, as reported in MS, including models with hyperparameter bias
 data_wBias = data_wBias[sample(nrow(data_wBias), 1000), ]
 
 

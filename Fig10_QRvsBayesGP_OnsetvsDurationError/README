@@ -2,7 +2,7 @@ To make the figure that compares the onset inference error rate as a function of
 
 source("makeFig10_QRvBayesianGP.R")
 
-The resulting file Fig10.quantileRegressionComparison.pdf provides a summary of the data in results.firstPass.txt. 
+The resulting file Fig10.quantileRegressionComparison.pdf provides a summary of the data in results.firstPass.txt. Note that statistical analyses in the MS relied on 1000 simulation replicates. Smoother bars in the figure are obtained with a larger sample size. This can be set in the makeFig10_QRvBayesianGP.R script by following the comments in the file.
 
 To regenerate similar data, follow the README in the Simulation subdirectory. Run at least 5000 replicates for each Scenario, or comment out the line 'data = data[1:5000, ]' in the makeFig10_QRvBayesianGP.R file. Concatenate the output files, sort reverse unique to remove all but one header line. 
 

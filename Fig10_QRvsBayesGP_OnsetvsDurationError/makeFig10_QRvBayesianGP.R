@@ -7,8 +7,9 @@ data = read.table("results.firstPass.txt", header=T, sep='\t')
 #data = read.table("temp.txt", header=T, sep='\t')
 #data = read.table("output.Test.txt", header=T, sep='\t')
 data = data[data$Number_Divergences==0,]
-data = data[1:5000, ]
-#data = data[1:1000, ]
+# 1000 simulation replicates, as reported in MS
+data = data[1:1000, ]
+#data = data[1:5000, ] # for figure, smoother bars  - uncomment for nicer figure
 
 #anchor error
 anchorQ = data$Est_QR_Intercept_meanQ10 + data$Est_QR_Slope_meanQ10 * (1850 + 2025) / 2

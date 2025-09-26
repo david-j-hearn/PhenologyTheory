@@ -4,7 +4,9 @@ set.seed(12345)
 
 data = read.table("results.CFq.txt", header=T, sep='\t')
 data = na.omit(data)
-data = data[sample(nrow(data), 2000), ]
+#data = data[sample(nrow(data), 2000), ]
+#1000 simulation replicates as reported in MS
+data = data[sample(nrow(data), 1000), ]
 data = data[data$TrueHyper_mean_MeanDuration-data$TrueParam_MeanDuration!=0,]
 
 attach(data)

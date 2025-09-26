@@ -6,6 +6,8 @@ Resolving paradoxes by considering phenophase duration.
 
 Within each folder, a README file describes how to use the R code to generate the figures. Some of the figures require simulation data. Precomputed simulation data are available in relevant folders, but if reviewers wish to recreate the simulated data, there are subfolders (Simulation, Analysis) that provide additional code to run the simulations.
 
+The scripts that generate the figures will also carry out the statistical analyses whose results are reported in the MS. The specific outcomes of the statistical analyses will depend on the number of simulation replicates, which can be configured in some of the scripts that carry out these statistical analyses. 
+
 Some of the simulated data or results of analyses will require additional formatting to match the requirements of the script that generates the figure. The README file again provides additional details, which typically involve sorting uniquely to keep only one header line, reformatting to a tab-separated text vs. csv file, or removing strings such as 'NA' or '_'.
 
 To generate the datasets used for publication, some of the simulations and analyses will take several days to complete on standard desktop computers. Unless the same number of replicates or the same seeds are used, some deviations from the published figures can be expected, although the overall results should not differ from those published, even if different seeds are used when the number of replicates is sufficient. 
