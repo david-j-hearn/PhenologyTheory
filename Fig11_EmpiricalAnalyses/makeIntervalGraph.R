@@ -290,7 +290,8 @@ covariate = "SpringMonthlyAverageTemp"
 #p = plot_intervals_by_type(df, covariate)
 #print(p)
 
-covariates = c("SpringMonthlyAverageTemp", "AnnualMonthlyAverageTemp")
+covariates = c("SpringMonthlyAverageTemp", "AnnualMonthlyAverageTemp", "Year", "Elevation", "Latitude")
+#covariates = c("SpringMonthlyAverageTemp", "AnnualMonthlyAverageTemp")
 #covariates = c("SpringMonthlyAverageTemp", "Latitude", "Elevation", "Year","AnnualMonthlyAverageTemp","FirstQuarterMonthlyAverageTemp")
 
 cnt = 1
@@ -329,15 +330,23 @@ df  =  tibble::tibble(
   sample_size = rep(data$N, 3)
 )
 
-xlim=c(-1,1)
-if(covariate=="SpringMonthlyAverageTemp") { 
-	xlim = c(-12,7)
+print(df)
+
+min = min(df$lower)
+max = max(df$upper)
+
+min = min - 0.2 * abs(max-min)
+xlim = c(min,max)
+
+#xlim=c(-1,1)
+#if(covariate=="SpringMonthlyAverageTemp") { 
+	#xlim = c(-12,7)
  p = plot_intervals_by_type(df, covariate, xlim)
-}
-if(covariate=="AnnualMonthlyAverageTemp") {
-	xlim = c(-15,8)
- p = plot_intervals_by_type(df, covariate, xlim)
-}
+#}
+#else {
+	#xlim = c(-15,8)
+ #p = plot_intervals_by_type(df, covariate, xlim)
+#}
  ggsave(paste0("Fig14.EmpiricalSummary.", covariate, ".pdf"))
 }
 
