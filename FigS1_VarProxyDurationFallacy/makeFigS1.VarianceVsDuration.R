@@ -4,7 +4,7 @@ source("phenologyInference.R")
 min = 0
 max = 365
 
-mu_D = 50
+mu_D = 50 
 mu_O = 180
 mu_C = mu_O + mu_D
 

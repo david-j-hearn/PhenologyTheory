@@ -1,0 +1,10 @@
+This figure attempts to communicate how the distribution of observed collection times provides insufficient information to infer phenological extremes without the population size. 
+
+To run this code, you will need the phenoCollectR package installed.
+
+To make this figure, run the following:
+
+pdf("FigS2_FirstOnsetVPopSize.pdf")
+source("makeFigS2.R")
+dev.off()
+

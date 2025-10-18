@@ -4,8 +4,8 @@ The conclusion is that variance of the distribution of observed collection times
 
 To make the figure, run the following from an R terminal prompt:
 
-pdf("Fig13_VarianceVsDuration.pdf")
-source("makeFig13.VarianceVsDuration.R")
+pdf("FigS1_VarianceVsDuration.pdf")
+source("makeFigS1.VarianceVsDuration.R")
 dev.off()
 
 Additional refinements were done manually using InkScape.
